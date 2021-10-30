@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>SARS-CoV-2 Ultra Rapid Antigen Test</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+      <link rel="icon" href="https://images.squarespace-cdn.com/content/v1/602a6f5204cc80278e0e5ed1/1615300997899-VP2OEPL21UFCR4MVM21Z/favicon.ico?format=100w">
+      <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    
+      <title>SARS-CoV-2 Ultra Rapid Antigen Test</title>
+    
+    </head>
+    <body style="background:#858796">
+      <style> .rounded-input {
+        padding:8px;
+        border-radius:10px;
+        text-align: center;
+      }
+      </style>
+    <div style="background:#858796" class="jumbotron" >
+      <br><br><br>
+     <center><h2 size="2">Please login into Panel to see Pelican Data Science Results Generated</h2>
+      <br>
+      <form action="" method="post" >
+        <input type="text" placeholder="Username" class=rounded-input name="username" value="{{
+          request.form.username }}">
+         <input type="password" placeholder="Password" class=rounded-input name="password" value="{{
+          request.form.password }}">
+          <br><br>
+        <input class="btn btn-default" type="submit" value="Login">
+      </form>
+      {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}
+      {% endif %}
+    </center> 
+    </div>
+  </body>
+</html>
